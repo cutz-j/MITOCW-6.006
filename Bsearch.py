@@ -9,7 +9,7 @@ import random
 
 randomList=[]
 while True:
-    rand=random.randint(1,100)
+    rand=random.randint(1,1000)
     randomList.append(rand)
     randomList=set(randomList)
     if len(randomList)==100:
@@ -20,6 +20,7 @@ while True:
     
 randomList=list(randomList)
 random.shuffle(randomList)
+print(randomList)
 
 def binarySearch(randomList):
     half=int(len(randomList)/2)
@@ -35,5 +36,6 @@ def binarySearch(randomList):
     except IndexError:
         return randomList[half]
     
+# shuffle 상황에서 best값이 나오지 않는다. WHY?
 
 print(binarySearch(randomList))
