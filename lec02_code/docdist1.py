@@ -46,7 +46,7 @@ def read_file(filename):
         f = open(filename, 'r')
         return f.readlines()
     except IOError:
-        print "Error opening or reading input file: ",filename
+        print ("Error opening or reading input file: ",filename)
         sys.exit()
 
 #################################################
@@ -59,7 +59,7 @@ def get_words_from_line_list(L):
     """
 
     word_list = []
-    for line in L:
+    for line in L: # linear(doc) = O(doc)
         words_in_line = get_words_from_string(line)
         word_list = word_list + words_in_line
     return word_list
@@ -75,7 +75,7 @@ def get_words_from_string(line):
     """
     word_list = []          # accumulates words in line
     character_list = []     # accumulates characters in word
-    for c in line:
+    for c in line: # linear(line) = O(line)
         if c.isalnum():
             character_list.append(c)
         elif len(character_list)>0:
@@ -97,13 +97,13 @@ def count_frequency(word_list):
     Return a list giving pairs of form: (word,frequency)
     """
     L = []
-    for new_word in word_list:
-        for entry in L:
+    for new_word in word_list: # linear -> O(word_list)
+        for entry in L: # linear -> 차차 증가 -> O(word_list^2/2)
             if new_word == entry[0]:
                 entry[1] = entry[1] + 1
                 break
         else:
-            L.append([new_word,1])
+            L.append([new_word,1]) # O(1) -> table doubling
     return L
 
 ###############################################################
@@ -118,7 +118,7 @@ def insertion_sort(A):
     modified to adjust for fact that Python arrays use 
     0-indexing.
     """
-    for j in range(len(A)):
+    for j in range(len(A)): # O(n2)
         key = A[j]
         # insert A[j] into sorted sequence A[0..j-1]
         i = j-1
@@ -142,10 +142,10 @@ def word_frequencies_for_file(filename):
     freq_mapping = count_frequency(word_list)
     insertion_sort(freq_mapping)
 
-    print "File",filename,":",
-    print len(line_list),"lines,",
-    print len(word_list),"words,",
-    print len(freq_mapping),"distinct words"
+    print ("File",filename,":",)
+    print (len(line_list),"lines,",)
+    print (len(word_list),"words,",)
+    print (len(freq_mapping),"distinct words")
 
     return freq_mapping
 
@@ -176,14 +176,14 @@ def vector_angle(L1,L2):
 
 def main():
     if len(sys.argv) != 3:
-        print "Usage: docdist1.py filename_1 filename_2"
+        print ("Usage: docdist1.py filename_1 filename_2")
     else:
         filename_1 = sys.argv[1]
         filename_2 = sys.argv[2]
         sorted_word_list_1 = word_frequencies_for_file(filename_1)
         sorted_word_list_2 = word_frequencies_for_file(filename_2)
         distance = vector_angle(sorted_word_list_1,sorted_word_list_2)
-        print "The distance between the documents is: %0.6f (radians)"%distance
+        print ("The distance between the documents is: %0.6f (radians)"%distance)
 
 if __name__ == "__main__":
     import profile
