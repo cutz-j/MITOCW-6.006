@@ -1,1 +1,1 @@
-# MITOCW-6.006
+# study for Algorithm
