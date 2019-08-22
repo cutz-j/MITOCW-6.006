@@ -42,8 +42,9 @@ int a_2588(void) {
 	return 0;
 }
 
-int main()
+int sub_1()
 {
 	a_2588();
+	return 0;
 }
 
