@@ -96,9 +96,3 @@ int q10817(void) {
 
 	return 0;
 }
-
-int main(void) {
-
-	q10817();
-	return 0;
-}
