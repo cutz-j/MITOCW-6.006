@@ -138,7 +138,7 @@ int q10871(void) {
 	return 0;
 }
 
-int main(void) {
+int lec3(void) {
 	q10871();
 
 	return 0;

@@ -157,6 +157,7 @@
     <ClCompile Include="BJ.cpp" />
     <ClCompile Include="lec2.cpp" />
     <ClCompile Include="lec3.cpp" />
+    <ClCompile Include="lec4.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
