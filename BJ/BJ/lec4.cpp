@@ -43,7 +43,7 @@ int q1110(void) {
 	return 0;
 }
 
-int main(void) {
+int sub(void) {
 	q1110();
 
 	return 0;
