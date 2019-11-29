@@ -187,7 +187,7 @@ int q1546(void) {
 	return 0;
 }
 
-int main(void) {
+int lec4(void) {
 	//q10818();
 	//q3052();
 	q1546();
