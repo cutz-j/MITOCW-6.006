@@ -75,6 +75,30 @@ int solver(bool taken[10], bool friends[10][10], int n) {
 		}
 
 	}
+	return 0;
+}
+
+int solver_2(bool taken[10], bool friends[10][10], int n) {
+	int first = -1;
+	for (int i = 0; i < n; i++) {
+		if (!taken[i]) {
+			first = i;
+			break;
+		}
+	}
+	
+	if (first == -1)
+		return 1;
+	int ret = 0;
+
+	for (int pair = first + 1; pair < n; pair++) {
+		if (!taken[pair] && friends[first][pair]) {
+			taken[first] = taken[pair] = true;
+			ret += solver_2(taken, friends, n);
+			taken[first] = taken[pair] = false;
+		}
+	}
+	return ret;
 }
 
 int main(void) {
