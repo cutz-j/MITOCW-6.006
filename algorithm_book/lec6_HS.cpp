@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -101,10 +102,27 @@ int solver_2(bool taken[10], bool friends[10][10], int n) {
 	return ret;
 }
 
-int main(void) {
-	/*const string word = "YES";
-	if(hasWord(2, 2, word))
-		cout << "found" << endl;*/
-	q6_3();
+vector<vector<int> > button({
+	vector<int>({ 0, 1, 2 }),
+	vector<int>({ 3, 7, 9, 11 }),
+	vector<int>({ 4, 10, 14, 15 }),
+	vector<int>({ 0, 4, 5, 6, 7 }),
+	vector<int>({ 6, 7, 8, 10, 12 }),
+	vector<int>({ 0, 2, 14, 15 }),
+	vector<int>({ 3, 14, 15 }),
+	vector<int>({ 4, 5, 7, 14, 15 }),
+	vector<int>({ 1, 2, 3, 4, 5 }),
+	vector<int>({ 3, 4, 5, 9, 13 })
+	});
+
+int q6_8(void) {
+	int C;
+	cout << button[0][1];
+
+	return 0;
+}
+
+int lec6(void) {
+	q6_8();
 	return 0;
 }

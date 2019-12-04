@@ -21,5 +21,8 @@
     <ClCompile Include="lec6_HS.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="lec6-8_HS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
