@@ -1,4 +1,2 @@
-﻿  lec6_HS.cpp
-D:\github\Algorithm\algorithm_book\lec6_HS.cpp(45,8): warning C4101: 'taken' :참조되지 않은 지역 변수입니다.
-D:\github\Algorithm\algorithm_book\lec6_HS.cpp(119,6): warning C4101: 'C' :참조되지 않은 지역 변수입니다.
+﻿  lec7-8_HS.cpp
   algorithm_book.vcxproj -> D:\github\Algorithm\algorithm_book\Debug\algorithm_book.exe

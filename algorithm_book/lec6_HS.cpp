@@ -17,8 +17,8 @@ bool hasWord(int x, int y, const string& word) {
 		return false;
 	if (y > 5 || y < 0)
 		return false;
-	if (BOARD[x][y] != word[0])
-		return false;
+	//if (BOARD[x][y] != word[0])
+	//	return false;
 	if (word.size() == 1)
 		return true;
 
@@ -121,7 +121,6 @@ int q6_8(void) {
 
 	return 0;
 }
-
 int lec6(void) {
 	q6_8();
 	return 0;
