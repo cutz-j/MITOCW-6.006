@@ -126,6 +126,7 @@
     <ClCompile Include="lec4_HS.cpp" />
     <ClCompile Include="lec6-8_HS.cpp" />
     <ClCompile Include="lec6_HS.cpp" />
+    <ClCompile Include="lec7-3.cpp" />
     <ClCompile Include="lec7-8_HS.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -34,7 +34,7 @@ int solve(int left, int right) {
 
 }
 
-int main() {
+int lec7_8() {
 	int C, N, input;
 
 	cin >> C;
