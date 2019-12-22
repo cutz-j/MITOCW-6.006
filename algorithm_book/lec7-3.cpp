@@ -83,7 +83,7 @@ void subFrom(vector<int>& a, const vector<int>& b) {
 }
 
 
-int main() {
+int lec7_3() {
 	vector<int> a;
 	vector<int> b;
 

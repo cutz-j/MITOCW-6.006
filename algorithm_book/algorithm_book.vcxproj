@@ -128,6 +128,10 @@
     <ClCompile Include="lec6_HS.cpp" />
     <ClCompile Include="lec7-3.cpp" />
     <ClCompile Include="lec7-8_HS.cpp" />
+    <ClCompile Include="lec8-1.cpp" />
+    <ClCompile Include="lec8_2_jumpgame.cpp" />
+    <ClCompile Include="lec8_8_pi.cpp" />
+    <ClCompile Include="lec8_8_triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
