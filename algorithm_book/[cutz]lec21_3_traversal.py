@@ -1,4 +1,4 @@
-
+v
 # 트리 노드
 class Node:
     def __init__(self, data):
